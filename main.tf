@@ -1,5 +1,6 @@
 provider "azurerm" {
-  version = ">=1.29.0"
+  version = "=2.26.0"
+  features {}
 }
 
 module "resource_group" {
