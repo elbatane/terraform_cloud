@@ -4,9 +4,9 @@ provider "azurerm" {
 }
 
 module "resource_group" {
-
-  source = "./modules/rsg"
-
+  source  = "app.terraform.io/TestingSAN/rsg/azurerm"
+  version = "1.0.0"
+  
   name     = var.rsg_name
   location = var.location
 
